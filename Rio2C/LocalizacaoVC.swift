@@ -23,6 +23,9 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
     private var locationManager: CLLocationManager!
     private var currentLocation: CLLocation?
     
+    var pointAnnotation:MKPointAnnotation!
+    var pinAnnotationView:MKPinAnnotationView!
+    
     var route: MKRoute?
     var circle:MKCircle!
     
@@ -69,10 +72,20 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
                     if let value = snap.value as? NSDictionary {
-                        let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
-                        self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
-                        self.circle.title = "assalto"
-                        self.mapView.add(self.circle)
+                        if value["longitude"] != nil && value["raio"] != nil {
+                            let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
+                            self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int ?? 0))
+                            self.circle.title = "assalto"
+                            self.mapView.add(self.circle)
+                            
+                            self.pointAnnotation = MKPointAnnotation()
+                            self.pointAnnotation.coordinate = coordinates
+                            self.pointAnnotation.title = "Assalto"
+                            self.pointAnnotation.subtitle = "Zona de Assalto"
+                            
+                            self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                            self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+                        }
                     }
                 }
             }
@@ -87,6 +100,14 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                         self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
                         self.circle.title = "bicicleta"
                         self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Bicicleta"
+                        self.pointAnnotation.subtitle = "Zona de Roubo de Bicicleta"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
                     }
                 }
             }
@@ -101,11 +122,19 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                         self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
                         self.circle.title = "carga"
                         self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Carga"
+                        self.pointAnnotation.subtitle = "Zona de roubo de carga"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
                     }
                 }
             }
         })
-
+        
         _ = ref.child("zona").child("veiculos").observe(.value, with: {
             (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
@@ -115,6 +144,14 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                         self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
                         self.circle.title = "veiculos"
                         self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Veiculos"
+                        self.pointAnnotation.subtitle = "Zona de assalto de Veiculos"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
                     }
                 }
             }
@@ -128,6 +165,14 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                         self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
                         self.circle.title = "celular"
                         self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Celular"
+                        self.pointAnnotation.subtitle = "Zona de roubo de Celulares"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
                     }
                 }
             }
@@ -141,6 +186,35 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                         self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
                         self.circle.title = "latrocinio"
                         self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Latrocinio"
+                        self.pointAnnotation.subtitle = "Zona de Latronicio"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+                    }
+                }
+            }
+        })
+        _ = ref.child("zona").child("homicidio").observe(.value, with: {
+            (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if let value = snap.value as? NSDictionary {
+                        let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
+                        self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
+                        self.circle.title = "homicidio"
+                        self.mapView.add(self.circle)
+                        
+                        self.pointAnnotation = MKPointAnnotation()
+                        self.pointAnnotation.coordinate = coordinates
+                        self.pointAnnotation.title = "Homocidio"
+                        self.pointAnnotation.subtitle = "Zona de Homicidio"
+                        
+                        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: "pin")
+                        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
                     }
                 }
             }
@@ -158,13 +232,22 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
             //let coordinate1 = CLLocation(latitude: (locationManger.location?.coordinate.latitude)!, longitude: (locationManger.location?.coordinate.longitude)!)
             
             let hist_panicoRef = ref.child("users").child(uid!).child("historico_panico")
-            let childId = hist_panicoRef.childByAutoId()
-            let latitude = childId.child("latitude")
+            var childId = hist_panicoRef.childByAutoId()
+            var latitude = childId.child("latitude")
             latitude.setValue(locationManager.location?.coordinate.latitude)
-            let longitude = childId.child("longitude")
+            var longitude = childId.child("longitude")
             longitude.setValue(locationManager.location?.coordinate.longitude)
-            let data = childId.child("data")
+            var data = childId.child("data")
             data.setValue(round(Date().timeIntervalSince1970))
+            
+            let zona_assalto = ref.child("zona").child("assalto")
+            childId = zona_assalto.childByAutoId()
+            latitude = childId.child("latitude")
+            latitude.setValue(locationManager.location?.coordinate.latitude)
+            longitude = childId.child("longitude")
+            longitude.setValue(locationManager.location?.coordinate.longitude)
+            let raio = childId.child("raio")
+            raio.setValue(1200)
             
             
             let panicoRef = ref.child("users").child(uid!).child("panico")
@@ -197,6 +280,10 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                 let headers = ["Content-Type": "application/x-www-form-urlencoded"]
                 
                 let url = "https://api.txtlocal.com/send/?"
+                
+                
+
+                
                 //                Alamofire.request(url, method: .post, parameters: userData, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 //                    switch response.result {
                 //                    case .success:
@@ -206,6 +293,7 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                 //                    }
                 //                }
             })
+            //carregaDados()
         }
     }
     
@@ -237,6 +325,10 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                 circleRenderer.fillColor = UIColor.cyan.withAlphaComponent(0.1)
                 circleRenderer.strokeColor = UIColor.cyan
             }
+            if overlay.title == "homicidio" {
+                circleRenderer.fillColor = UIColor.orange.withAlphaComponent(0.1)
+                circleRenderer.strokeColor = UIColor.orange
+            }
             circleRenderer.lineWidth = 1
             return circleRenderer
         }
@@ -263,7 +355,7 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
     @IBAction func centralizarPressed(_ sender: UITapGestureRecognizer) {
         //if let userLocation = locations.last {
         let viewRegion = MKCoordinateRegionMakeWithDistance((currentLocation?.coordinate)!, 2000, 2000)
-            mapView.setRegion(viewRegion, animated: false)
+        mapView.setRegion(viewRegion, animated: false)
         //}
     }
     
