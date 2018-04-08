@@ -267,7 +267,7 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                 
                 if (MFMessageComposeViewController.canSendText()) {
                     let controller = MFMessageComposeViewController()
-                    controller.body = "Alerta de Botão Panico"
+                    controller.body = "Alerta de Botão Panico, localização - https://www.google.com/maps/@\(self.locationManager.location?.coordinate.latitude),\(self.locationManager.location?.coordinate.longitude)z"
                     controller.recipients = [celularessms]
                     controller.messageComposeDelegate = self
                     self.present(controller, animated: true, completion: nil)
