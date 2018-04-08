@@ -7,29 +7,48 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class CadastroVC: UIViewController {
+class CadastroVC: UIViewController, AuthUIDelegate {
 
+    @IBOutlet weak var nomeTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var celularTxt: UITextField!
+    
+    var telefone :String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        celularTxt.text = telefone
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func CadastroBrnPressed(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Nro. Telefone", message: "Confirma o número do celular? \n\(celularTxt.text!)", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Sim", style: .default) { (UIAlertAction) in
+            //self.CarregandoV.isHidden = false
+            //self.IndicadorAIV.startAnimating()
+            //telefonecompleto = "\(self.dddTxt.text!)\(self.celularTxt.text!)"
+            PhoneAuthProvider.provider().verifyPhoneNumber(self.celularTxt.text!, uiDelegate: self) { (verificationID, error) in
+                //self.CarregandoV.isHidden = true
+                //self.IndicadorAIV.stopAnimating()
+                if error != nil {
+                    print("Error: \(String(describing: error?.localizedDescription))")
+                    //self.showMessagePrompt(error.localizedDescription)
+                    return
+                } else {
+                    let defaults = UserDefaults.standard
+                    defaults.set(verificationID, forKey: "authVID")
+                    //                    defaults.set("54FjYF8UwBS5IVbeitX9Pq6IbfF3", forKey: "authVID")
+                    self.performSegue(withIdentifier: "localizacao2", sender: self)
+                }
+            }
+        }
+        let cancel = UIAlertAction(title: "Não", style: .cancel, handler: nil)
+        alert.addAction(action)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

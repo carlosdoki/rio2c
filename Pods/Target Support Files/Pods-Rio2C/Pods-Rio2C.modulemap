@@ -1,0 +1,6 @@
+framework module Pods_Rio2C {
+  umbrella header "Pods-Rio2C-umbrella.h"
+
+  export *
+  module * { export * }
+}

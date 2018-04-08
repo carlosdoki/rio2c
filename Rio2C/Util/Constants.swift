@@ -6,4 +6,7 @@
 //  Copyright © 2018 Carlos Doki. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+var userUUID = ""
+let KEY_UID = "uid"

@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240260E988AF08EF9FE57801 /* Pods_Rio2C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E139E46963E7799D5A7CA59 /* Pods_Rio2C.framework */; };
+		BC4FBF7820795ECF001B9CE2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF7720795ECF001B9CE2 /* LoginVC.swift */; };
+		BC4FBF7B20795FCE001B9CE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF7A20795FCE001B9CE2 /* Constants.swift */; };
+		BC4FBF7D20796698001B9CE2 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF7C20796698001B9CE2 /* CadastroVC.swift */; };
+		BC4FBF8020798404001B9CE2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF7F20798404001B9CE2 /* DataService.swift */; };
+		BC4FBF83207988DC001B9CE2 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF82207988DC001B9CE2 /* RoundedButton.swift */; };
+		BC4FBF8620798F1E001B9CE2 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF8520798F1E001B9CE2 /* users.swift */; };
+		BC4FBF882079A854001B9CE2 /* celulares.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF872079A854001B9CE2 /* celulares.swift */; };
+		BC4FBF8A2079A9B0001B9CE2 /* CelularesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBF892079A9B0001B9CE2 /* CelularesTVC.swift */; };
 		BC50B40C2079513200F8F4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50B40B2079513200F8F4D7 /* AppDelegate.swift */; };
-		BC50B40E2079513200F8F4D7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50B40D2079513200F8F4D7 /* FirstViewController.swift */; };
-		BC50B4102079513200F8F4D7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50B40F2079513200F8F4D7 /* SecondViewController.swift */; };
+		BC50B40E2079513200F8F4D7 /* LocalizacaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50B40D2079513200F8F4D7 /* LocalizacaoVC.swift */; };
+		BC50B4102079513200F8F4D7 /* MinhaContaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50B40F2079513200F8F4D7 /* MinhaContaVC.swift */; };
 		BC50B4132079513200F8F4D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50B4112079513200F8F4D7 /* Main.storyboard */; };
 		BC50B4152079513400F8F4D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC50B4142079513400F8F4D7 /* Assets.xcassets */; };
 		BC50B4182079513400F8F4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50B4162079513400F8F4D7 /* LaunchScreen.storyboard */; };
+		BC50B420207954E000F8F4D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC50B41F207954E000F8F4D7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0838D99C50AB7E39BA8A46 /* Pods-Rio2C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rio2C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rio2C/Pods-Rio2C.debug.xcconfig"; sourceTree = "<group>"; };
+		6E139E46963E7799D5A7CA59 /* Pods_Rio2C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rio2C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6CF5081EC7DA10BD7803C1 /* Pods-Rio2C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rio2C.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rio2C/Pods-Rio2C.release.xcconfig"; sourceTree = "<group>"; };
+		BC4FBF7720795ECF001B9CE2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BC4FBF7A20795FCE001B9CE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC4FBF7C20796698001B9CE2 /* CadastroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
+		BC4FBF7F20798404001B9CE2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BC4FBF82207988DC001B9CE2 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BC4FBF8520798F1E001B9CE2 /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
+		BC4FBF872079A854001B9CE2 /* celulares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celulares.swift; sourceTree = "<group>"; };
+		BC4FBF892079A9B0001B9CE2 /* CelularesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelularesTVC.swift; sourceTree = "<group>"; };
 		BC50B4082079513200F8F4D7 /* Rio2C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rio2C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC50B40B2079513200F8F4D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC50B40D2079513200F8F4D7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BC50B40F2079513200F8F4D7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BC50B40D2079513200F8F4D7 /* LocalizacaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoVC.swift; sourceTree = "<group>"; };
+		BC50B40F2079513200F8F4D7 /* MinhaContaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaContaVC.swift; sourceTree = "<group>"; };
 		BC50B4122079513200F8F4D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC50B4142079513400F8F4D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC50B4172079513400F8F4D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC50B4192079513400F8F4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC50B41F207954E000F8F4D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240260E988AF08EF9FE57801 /* Pods_Rio2C.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51F352E61F3B2F55EF65CA9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F0838D99C50AB7E39BA8A46 /* Pods-Rio2C.debug.xcconfig */,
+				9C6CF5081EC7DA10BD7803C1 /* Pods-Rio2C.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC4FBF7920795FBF001B9CE2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FBF7A20795FCE001B9CE2 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BC4FBF7E207983EF001B9CE2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FBF7F20798404001B9CE2 /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BC4FBF81207988C6001B9CE2 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FBF82207988DC001B9CE2 /* RoundedButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BC4FBF8420798F03001B9CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FBF8520798F1E001B9CE2 /* users.swift */,
+				BC4FBF872079A854001B9CE2 /* celulares.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BC50B3FF2079513200F8F4D7 = {
 			isa = PBXGroup;
 			children = (
 				BC50B40A2079513200F8F4D7 /* Rio2C */,
 				BC50B4092079513200F8F4D7 /* Products */,
+				51F352E61F3B2F55EF65CA9F /* Pods */,
+				DF8193352A18DDD6E9037F92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +123,31 @@
 		BC50B40A2079513200F8F4D7 /* Rio2C */ = {
 			isa = PBXGroup;
 			children = (
+				BC4FBF8420798F03001B9CE2 /* Model */,
+				BC4FBF81207988C6001B9CE2 /* Custom */,
+				BC4FBF7E207983EF001B9CE2 /* Service */,
+				BC4FBF7920795FBF001B9CE2 /* Util */,
 				BC50B40B2079513200F8F4D7 /* AppDelegate.swift */,
-				BC50B40D2079513200F8F4D7 /* FirstViewController.swift */,
-				BC50B40F2079513200F8F4D7 /* SecondViewController.swift */,
+				BC50B40D2079513200F8F4D7 /* LocalizacaoVC.swift */,
+				BC50B40F2079513200F8F4D7 /* MinhaContaVC.swift */,
 				BC50B4112079513200F8F4D7 /* Main.storyboard */,
 				BC50B4142079513400F8F4D7 /* Assets.xcassets */,
 				BC50B4162079513400F8F4D7 /* LaunchScreen.storyboard */,
 				BC50B4192079513400F8F4D7 /* Info.plist */,
+				BC50B41F207954E000F8F4D7 /* GoogleService-Info.plist */,
+				BC4FBF7720795ECF001B9CE2 /* LoginVC.swift */,
+				BC4FBF7C20796698001B9CE2 /* CadastroVC.swift */,
+				BC4FBF892079A9B0001B9CE2 /* CelularesTVC.swift */,
 			);
 			path = Rio2C;
+			sourceTree = "<group>";
+		};
+		DF8193352A18DDD6E9037F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E139E46963E7799D5A7CA59 /* Pods_Rio2C.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC50B41C2079513400F8F4D7 /* Build configuration list for PBXNativeTarget "Rio2C" */;
 			buildPhases = (
+				AD346297E5FDC02BAAAAB263 /* [CP] Check Pods Manifest.lock */,
 				BC50B4042079513200F8F4D7 /* Sources */,
 				BC50B4052079513200F8F4D7 /* Frameworks */,
 				BC50B4062079513200F8F4D7 /* Resources */,
+				005F72A9C3A3809790D23A96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +184,11 @@
 				TargetAttributes = {
 					BC50B4072079513200F8F4D7 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC50B4182079513400F8F4D7 /* LaunchScreen.storyboard in Resources */,
+				BC50B420207954E000F8F4D7 /* GoogleService-Info.plist in Resources */,
 				BC50B4152079513400F8F4D7 /* Assets.xcassets in Resources */,
 				BC50B4132079513200F8F4D7 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +224,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		005F72A9C3A3809790D23A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rio2C/Pods-Rio2C-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rio2C/Pods-Rio2C-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD346297E5FDC02BAAAAB263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rio2C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC50B4042079513200F8F4D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC50B4102079513200F8F4D7 /* SecondViewController.swift in Sources */,
+				BC4FBF7B20795FCE001B9CE2 /* Constants.swift in Sources */,
+				BC4FBF8620798F1E001B9CE2 /* users.swift in Sources */,
+				BC4FBF8020798404001B9CE2 /* DataService.swift in Sources */,
+				BC4FBF7D20796698001B9CE2 /* CadastroVC.swift in Sources */,
+				BC4FBF83207988DC001B9CE2 /* RoundedButton.swift in Sources */,
+				BC4FBF8A2079A9B0001B9CE2 /* CelularesTVC.swift in Sources */,
+				BC50B4102079513200F8F4D7 /* MinhaContaVC.swift in Sources */,
+				BC4FBF882079A854001B9CE2 /* celulares.swift in Sources */,
 				BC50B40C2079513200F8F4D7 /* AppDelegate.swift in Sources */,
-				BC50B40E2079513200F8F4D7 /* FirstViewController.swift in Sources */,
+				BC4FBF7820795ECF001B9CE2 /* LoginVC.swift in Sources */,
+				BC50B40E2079513200F8F4D7 /* LocalizacaoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +430,7 @@
 		};
 		BC50B41D2079513400F8F4D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0838D99C50AB7E39BA8A46 /* Pods-Rio2C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +449,7 @@
 		};
 		BC50B41E2079513400F8F4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6CF5081EC7DA10BD7803C1 /* Pods-Rio2C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
