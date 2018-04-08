@@ -70,6 +70,14 @@
                                                     <constraint firstAttribute="height" constant="30" id="PxQ-zB-idr"/>
                                                 </constraints>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-eg-9y8">
+                                                <rect key="frame" x="313" y="70" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="teste:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fbs-po-S1i"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -85,16 +93,25 @@
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lft-jt-kab">
                                         <rect key="frame" x="0.0" y="100" width="375" height="498"/>
                                     </mapView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass-point-7" translatesAutoresizingMaskIntoConstraints="NO" id="JIu-cF-gBf">
+                                        <rect key="frame" x="328" y="551" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="2aU-ph-n4T"/>
+                                            <constraint firstAttribute="height" constant="37" id="shA-v8-quM"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Lft-jt-kab" firstAttribute="leading" secondItem="GpO-ya-hcP" secondAttribute="leading" id="1cJ-AD-XPG"/>
                                     <constraint firstItem="Lft-jt-kab" firstAttribute="top" secondItem="WfF-Qq-jB3" secondAttribute="bottom" id="46m-M3-GwD"/>
                                     <constraint firstItem="WfF-Qq-jB3" firstAttribute="top" secondItem="GpO-ya-hcP" secondAttribute="top" id="5hh-HD-V4u"/>
+                                    <constraint firstAttribute="bottom" secondItem="JIu-cF-gBf" secondAttribute="bottom" constant="10" id="bwb-AE-eWh"/>
                                     <constraint firstAttribute="trailing" secondItem="Lft-jt-kab" secondAttribute="trailing" id="hbA-Nz-Pec"/>
                                     <constraint firstAttribute="trailing" secondItem="WfF-Qq-jB3" secondAttribute="trailing" id="kus-Im-su6"/>
                                     <constraint firstItem="WfF-Qq-jB3" firstAttribute="leading" secondItem="GpO-ya-hcP" secondAttribute="leading" id="m1t-9T-Rl6"/>
                                     <constraint firstAttribute="bottom" secondItem="Lft-jt-kab" secondAttribute="bottom" id="ubc-HY-J0r"/>
+                                    <constraint firstAttribute="trailing" secondItem="JIu-cF-gBf" secondAttribute="trailing" constant="10" id="ubs-No-7Au"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -107,14 +124,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Localização" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Localização" image="pin-map-7" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="mapView" destination="Lft-jt-kab" id="9TB-ou-Rp0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="-150"/>
+            <point key="canvasLocation" x="712.79999999999995" y="-150.67466266866569"/>
         </scene>
         <!--Minha Conta-->
         <scene sceneID="wg7-f3-ORb">
@@ -358,7 +375,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Minha Conta" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Minha Conta" image="list-simple-8" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="ceclularTxt" destination="Dtj-6P-asO" id="p6b-WJ-UOc"/>
                         <outlet property="celularesTbl" destination="ZIf-cW-6Yo" id="euF-rS-xon"/>
@@ -486,7 +503,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="compass-point-7" width="30" height="30"/>
+        <image name="list-simple-8" width="30" height="30"/>
+        <image name="pin-map-7" width="30" height="30"/>
     </resources>
 </document>

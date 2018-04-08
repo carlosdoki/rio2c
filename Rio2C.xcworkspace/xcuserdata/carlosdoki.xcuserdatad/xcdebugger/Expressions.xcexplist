@@ -3,12 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
+      </ContextState>
+      <ContextState
          contextName = "MinhaContaVC.tableView(_:cellForRowAt:):MinhaContaVC.swift">
          <PersistentStrings>
             <PersistentString
                value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in LoginVC.viewDidLoad():LoginVC.swift">
@@ -18,6 +24,17 @@
          <PersistentStrings>
             <PersistentString
                value = "snapshot.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result">
+            </PersistentString>
+            <PersistentString
+               value = "response.data">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
