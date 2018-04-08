@@ -105,7 +105,46 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
                 }
             }
         })
-        
+
+        _ = ref.child("zona").child("veiculos").observe(.value, with: {
+            (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if let value = snap.value as? NSDictionary {
+                        let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
+                        self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
+                        self.circle.title = "veiculos"
+                        self.mapView.add(self.circle)
+                    }
+                }
+            }
+        })
+        _ = ref.child("zona").child("celular").observe(.value, with: {
+            (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if let value = snap.value as? NSDictionary {
+                        let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
+                        self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
+                        self.circle.title = "celular"
+                        self.mapView.add(self.circle)
+                    }
+                }
+            }
+        })
+        _ = ref.child("zona").child("latrocinio").observe(.value, with: {
+            (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if let value = snap.value as? NSDictionary {
+                        let coordinates = CLLocationCoordinate2D(latitude: value["latitude"] as! Double, longitude: value["longitude"] as! Double)
+                        self.circle = MKCircle(center: coordinates, radius: CLLocationDistance(value["raio"] as! Int))
+                        self.circle.title = "latrocinio"
+                        self.mapView.add(self.circle)
+                    }
+                }
+            }
+        })
     }
     
     @objc func volumeChanged(notification: NSNotification) {
@@ -173,17 +212,30 @@ class LocalizacaoVC: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay.isKind(of: MKCircle.self) {
             let circleRenderer = MKCircleRenderer(overlay: overlay)
-            if self.circle.title == "assalto" {
+            
+            if overlay.title == "assalto" {
                 circleRenderer.fillColor = UIColor.red.withAlphaComponent(0.1)
                 circleRenderer.strokeColor = UIColor.red
             }
-            if self.circle.title == "bicicleta" {
+            if overlay.title == "bicicleta" {
+                circleRenderer.fillColor = UIColor.brown.withAlphaComponent(0.1)
+                circleRenderer.strokeColor = UIColor.brown
+            }
+            if overlay.title == "carga" {
+                circleRenderer.fillColor = UIColor.blue.withAlphaComponent(0.1)
+                circleRenderer.strokeColor = UIColor.blue
+            }
+            if overlay.title == "celular" {
                 circleRenderer.fillColor = UIColor.yellow.withAlphaComponent(0.1)
                 circleRenderer.strokeColor = UIColor.yellow
             }
-            if self.circle.title == "carga" {
-                circleRenderer.fillColor = UIColor.blue.withAlphaComponent(0.1)
-                circleRenderer.strokeColor = UIColor.blue
+            if overlay.title == "veiculos" {
+                circleRenderer.fillColor = UIColor.purple.withAlphaComponent(0.1)
+                circleRenderer.strokeColor = UIColor.purple
+            }
+            if overlay.title == "latrocinio" {
+                circleRenderer.fillColor = UIColor.cyan.withAlphaComponent(0.1)
+                circleRenderer.strokeColor = UIColor.cyan
             }
             circleRenderer.lineWidth = 1
             return circleRenderer

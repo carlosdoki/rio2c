@@ -55,6 +55,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "LocalizacaoVC.mapView(_:rendererFor:):LocalizacaoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.circle.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in LoginVC.viewDidLoad():LoginVC.swift">
       </ContextState>
       <ContextState

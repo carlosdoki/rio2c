@@ -33,6 +33,12 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jR1-uM-9p6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_saferio" translatesAutoresizingMaskIntoConstraints="NO" id="4qU-4R-Ajx">
+                                                <rect key="frame" x="75" y="0.0" width="227" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="4T3-P1-qh0"/>
@@ -61,7 +67,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-LE-exi">
                                                         <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sK6-nj-xjZ">
@@ -81,7 +87,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destino:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOS-NZ-uTT">
                                                         <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-Xp-Sqj">
@@ -161,6 +167,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-Z1-hhx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_saferio" translatesAutoresizingMaskIntoConstraints="NO" id="kcX-To-Kkt">
+                                        <rect key="frame" x="80" y="11" width="215" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="437-GV-Kbt"/>
@@ -180,7 +192,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.59607843140000005" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="k6O-RJ-EFB"/>
                                         </constraints>
@@ -194,7 +206,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OI-PE-vyk">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5c9-sc-1hC">
@@ -211,7 +223,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRK-H5-fmG">
                                                         <rect key="frame" x="0.0" y="0.0" width="54.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBb-Bt-KAF">
@@ -228,7 +240,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celular:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkZ-ih-q5m">
                                                         <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dtj-6P-asO">
@@ -265,7 +277,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.59607843140000005" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="AHq-mU-wZ4"/>
                                             <constraint firstAttribute="height" constant="60" id="qn9-06-1br"/>
@@ -286,9 +298,9 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f18-p2-0kG">
-                                                                    <rect key="frame" x="10" y="30.5" width="355" height="0.0"/>
+                                                                    <rect key="frame" x="10" y="30" width="355" height="0.0"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -322,7 +334,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celular:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pS-Xh-OoG">
                                                         <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4p-hw-xKI">
@@ -337,8 +349,10 @@
                                                 <rect key="frame" x="250" y="52" width="109" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                <color key="tintColor" red="1" green="0.59607843140000005" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Excluir"/>
+                                                <color key="tintColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Excluir">
+                                                    <color key="titleColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="ExcluirCelularBtn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="gjU-wf-5mI"/>
                                                 </connections>
@@ -347,8 +361,10 @@
                                                 <rect key="frame" x="110" y="52" width="120" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                <color key="tintColor" red="1" green="0.59607843140000005" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Incluir"/>
+                                                <color key="tintColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Incluir">
+                                                    <color key="titleColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="IncluirCelularBtn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cq5-JU-vAR"/>
                                                 </connections>
@@ -429,11 +445,12 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hme-4i-6HO">
                                         <rect key="frame" x="10" y="10" width="355" height="21"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.68627450980000004" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="vD9-dD-6c6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9r-c8-0yd">
@@ -451,7 +468,7 @@
                                             <constraint firstAttribute="height" constant="60" id="nKM-DA-Y7u"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <color key="tintColor" red="1" green="0.59607843137254901" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.65098039220000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Entrar"/>
                                         <connections>
                                             <action selector="btnEntrarPressed:" destination="zFM-Ni-F7C" eventType="touchUpInside" id="6Do-df-Wpm"/>
@@ -515,6 +532,7 @@
     <resources>
         <image name="compass-point-7" width="30" height="30"/>
         <image name="list-simple-8" width="30" height="30"/>
+        <image name="logo_saferio" width="140" height="98"/>
         <image name="pin-map-7" width="30" height="30"/>
     </resources>
 </document>
