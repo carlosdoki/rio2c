@@ -15,7 +15,6 @@ import Alamofire
 class LoginVC: UIViewController {
     
     @IBOutlet weak var nroCelularTxt: UITextField!
-    @IBOutlet weak var btnEntrar: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

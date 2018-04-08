@@ -3,21 +3,15 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MinhaContaVC.tableView(_:cellForRowAt:):MinhaContaVC.swift">
+         contextName = "LocalizacaoVC.volumeChanged(notification:):LocalizacaoVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "indexPath.row">
+               value = "userInfo.keys">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in LoginVC.viewDidLoad():LoginVC.swift">
       </ContextState>
       <ContextState
          contextName = "closure #2 in MinhaContaVC.viewDidLoad():MinhaContaVC.swift">
@@ -35,6 +29,39 @@
             </PersistentString>
             <PersistentString
                value = "response.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LocalizacaoVC.carregaDados():LocalizacaoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "value[&quot;latitude&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "value[&quot;longitude&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LocalizacaoVC.teste(_:):LocalizacaoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "peripherals.count">
+            </PersistentString>
+            <PersistentString
+               value = "peripherals[0].name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginVC.viewDidLoad():LoginVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MinhaContaVC.tableView(_:cellForRowAt:):MinhaContaVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
